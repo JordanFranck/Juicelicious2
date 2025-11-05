@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Juicelicious</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#" title="Juicelicious">
+                    <span class="logo-text">Juicelicious</span>
+                </a>
+            </div>
+            
+            <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <form action="#" method="get" class="search-form">
+                    <input type="text" name="q" placeholder="Buscar receitas..." class="search-input" id="search-input">
+                    <button type="submit" class="search-btn" id="search-btn">Buscar</button>
+                </form>
+            </div>
+            
+            <!-- Menu de Navegação -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Receitas</a></li>
+                    <li><a href="#" class="nav-link">Categorias</a></li>
+                    <li><a href="#" class="nav-link">Dicas</a></li>
+                    <li><a href="#" class="nav-link">Apps</a></li>
+                    <li><a href="#" class="nav-link">Login</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Menu Mobile (Hamburger) -->
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile Expandido -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="#" class="mobile-nav-link">Receitas</a></li>
+                <li><a href="#" class="mobile-nav-link">Categorias</a></li>
+                <li><a href="#" class="mobile-nav-link">Dicas</a></li>
+                <li><a href="#" class="mobile-nav-link">Apps</a></li>
+                <li><a href="#" class="mobile-nav-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="cadastro-container">
+            <h1>Cadastre-se no Juicelicious</h1>
+            <form id="cadastro-form" class="cadastro-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmar-senha">Confirmar Senha</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+                </div>
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+            </form>
+            <p class="login-link">Já tem uma conta? <a href="login.html">Fazer login</a></p>
+        </div>
+    </main>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
