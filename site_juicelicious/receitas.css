@@ -1,0 +1,68 @@
+/* Conteúdo da Receita */
+.receita-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.receita-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff8c42;
+}
+
+.receita-imagem {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+.receita-container h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.receita-container ul, .receita-container ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.receita-container li {
+    margin-bottom: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        max-width: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .receita-container {
+        padding: 15px;
+    }
+}

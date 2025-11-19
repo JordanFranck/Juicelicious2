@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juicelicious - Receitas Deliciosas</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home/home.css">
+    <link rel="stylesheet" href="receitas.css">
 </head>
 <body>
     <header class="site-header">
         <div class="header-container">
             <!-- Logo -->
             <div class="logo">
-                <a href="#" title="Juicelicious">
+                <a href="../site_juicelicious/home/home.html" title="Juicelicious">
                     <span class="logo-text">Juicelicious</span>
                 </a>
             </div>
@@ -28,9 +29,9 @@
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="../bolo.html" class="nav-link">Receitas</a></li>
-                    <li><a href="../mousse.html" class="nav-link">Categorias</a></li>
+                    <li><a href="#" class="nav-link">Categorias</a></li>
                     <li><a href="../cadastro/cadastro.html" class="nav-link">Cadastro</a></li>
-                    <li><a href="../pao.html" class="nav-link">Login</a></li>
+                    <li><a href="#" class="nav-link">Login</a></li>
                 </ul>
             </nav>
             
@@ -53,9 +54,31 @@
         </nav>
     </header>
 
-    <a href="../bolo.html"><img src="../bolo.png" alt="Bolo de Cenoura"></a>
-    <a href="../mousse.html"><img src="../mousse.png" alt="Bolo de Cenoura"></a>
-    <a href="../pao.html"><img src="../pao.png" alt="Bolo de Cenoura"></a>
+    <main class="receita-container">
+        <h1>Bolo de Cenoura</h1>
+        <img src="bolo.png" alt="Bolo de Cenoura" class="receita-imagem">
+        
+        <h2>Ingredientes (para 8 porções)</h2>
+        <ul>
+            <li>3 cenouras médias raladas</li>
+            <li>3 ovos</li>
+            <li>1 xícara de óleo</li>
+            <li>2 xícaras de açúcar</li>
+            <li>2 xícaras de farinha de trigo</li>
+            <li>1 colher de sopa de fermento em pó</li>
+            <li>1 pitada de sal</li>
+        </ul>
+        
+        <h2>Modo de Preparo</h2>
+        <ol>
+            <li>Pré-aqueça o forno a 180°C.</li>
+            <li>No liquidificador, bata as cenouras, ovos, óleo e açúcar até formar uma mistura homogênea.</li>
+            <li>Em uma tigela, peneire a farinha, o fermento e o sal. Adicione a mistura do liquidificador e mexa até incorporar.</li>
+            <li>Despeje a massa em uma forma untada e enfarinhada.</li>
+            <li>Asse por cerca de 40-50 minutos, ou até que um palito saia limpo.</li>
+            <li>Deixe esfriar e sirva.</li>
+        </ol>
+    </main>
 
     <script src="home.js"></script>
 </body>
